@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Pedidos - Haojan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Gestión de Pedidos <span class="logo">HAOJAN</span></h1>
+    <nav>
+      <div class="nav-buttons">
+        <a href="index.html" class="back-button">← Volver</a>
+        <button id="logoutBtn" class="logout-btn">Cerrar sesión</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pedidos-main">
+    <div class="pedidos-controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar pedidos...">
+        <button id="searchBtn">Buscar</button>
+      </div>
+      <div class="pedidos-stats">
+        <div class="stat-card">
+          <span class="stat-number" id="totalCount">0</span>
+          <span class="stat-label">Total</span>
+        </div>
+        <div class="stat-card pending">
+          <span class="stat-number" id="pendingCount">0</span>
+          <span class="stat-label">Pendientes</span>
+        </div>
+        <div class="stat-card completed">
+          <span class="stat-number" id="completedCount">0</span>
+          <span class="stat-label">Completados</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="pedidos-container" class="pedidos-container">
+      <!-- Los pedidos se cargarán aquí -->
+    </div>
+  </main>
+
+  <script src="pedidos.js"></script>
+</body>
+</html>
