@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Guardar en localStorage
       const pedidoId = 'pedido_' + Date.now();
       localStorage.setItem(pedidoId, JSON.stringify(pedido));
+      console.log('Pedido guardado:', pedidoId, pedido);
 
       // Mostrar mensaje de éxito
       showMessage('¡Tu pedido ha sido enviado! Pronto nos contactaremos contigo.', 'success');
@@ -147,4 +148,5 @@ document.addEventListener('DOMContentLoaded', function() {
       e.target.closest('tr').remove();
     }
   });
+
 });
